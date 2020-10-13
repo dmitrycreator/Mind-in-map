@@ -1,5 +1,5 @@
 html {
-    background-color: gray;
+
 }
 
 .menu1,
@@ -11,12 +11,13 @@ html {
 
 .panel {
     float: right;
-    position: absolute;
     top: 0px;
     right: 0px;
-    width: 400px;
-    height: 100%;
-    background-color: white;
+    width: 105%;
+    /* height: 100%; */
+    background-color: gray;
+    border-radius: 0 0 0 10px;
+    padding-right: 0%;
 }
 
 .canvas {
