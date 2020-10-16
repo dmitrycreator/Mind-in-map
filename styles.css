@@ -34,3 +34,12 @@ html {
     top: 0px;
     bottom: 0px;
 }
+
+.home{
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.nav-tabs .nav-link{
+    border-radius: 4px;
+}
