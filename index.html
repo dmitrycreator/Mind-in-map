@@ -29,336 +29,329 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-10 pr-0">
-            <div class="home">
-                <ul class="nav nav-tabs bg-dark border-0" style="padding-left: 8px; padding-top: 8px;">
-                    <li class="tab1">
-                      <a class="tabText nav-link border-bottom-0 border active" data-toggle="tab" href="#description">Tab1</a>
-                    </li>
-                    <li class="tab2">
-                      <a class="tabText nav-link border-bottom-0 border" data-toggle="tab" href="#characteristics" style="margin-left: -1px;">Tab2</a>
-                    </li>
-                    <li class="tab3">
-                      <a class="tabText nav-link border-bottom-0 border" data-toggle="tab" href="#opinion" style="margin-left: -1px;">Tab3</a>
-                    </li>
-                  </ul>
-                  <div class="tab-content">
-                    <div class="tab-pane fade show active" id="description">
-                        Tab1
-                    </div>
-                    <div class="tab-pane fade" id="characteristics">
-                        Tab2
-                    </div>
-                    <div class="tab-pane fade" id="opinion">
-                        Tab3
-                    </div>
-                  </div>
+    <div class="home">
+        <ul class="nav nav-tabs bg-dark border-0" style="padding-left: 8px; padding-top: 8px;">
+            <li class="tab1">
+                <a class="tabText nav-link border-bottom-0 border active" data-toggle="tab" href="#description">Tab1</a>
+            </li>
+            <li class="tab2">
+                <a class="tabText nav-link border-bottom-0 border" data-toggle="tab" href="#characteristics" style="margin-left: -1px;">Tab2</a>
+            </li>
+            <li class="tab3">
+                <a class="tabText nav-link border-bottom-0 border" data-toggle="tab" href="#opinion" style="margin-left: -1px;">Tab3</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="description">
+                Tab1
+            </div>
+            <div class="tab-pane fade" id="characteristics">
+                Tab2
+            </div>
+            <div class="tab-pane fade" id="opinion">
+                Tab3
             </div>
         </div>
-        <div class="col-2 pr-0">
-            <div class="panel">
-                <div class="menu1" style="margin-right: 30px;">
-                    <h4 class="lead text-dark">File</h4>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-arrow-no-bordure.svg" alt=""></button>
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-printno-bordure.svg" alt=""></button>
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-shareno-bordure.svg"></button>
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-saveno-bordure.svg" alt="" id="exportToFile"></button>
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-loadno-bordure.svg" alt="" id="importFromFile"></button>
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-infono-bordure.svg" alt=""></button>
+    </div>
+    <div class="panel">
+        <div class="menu1" style="margin-right: 30px;">
+            <h4 class="lead text-dark">File</h4>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-arrow-no-bordure.svg" alt=""></button>
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-printno-bordure.svg" alt=""></button>
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-shareno-bordure.svg"></button>
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-saveno-bordure.svg" alt="" id="exportToFile"></button>
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-loadno-bordure.svg" alt="" id="importFromFile"></button>
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-infono-bordure.svg" alt=""></button>
+            </div>
+        </div>
+        <div class="menu2" style="margin-right: 30px;">
+            <h4 class="lead text-dark">Tools</h4>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu2-delete-no-bordure.svg" id="delete"></button>
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu2-undo-no-bordure.svg" alt="" id="undo"></button>
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu2-return-no-bordure.svg" id="redo"></button>
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu2-focus-no-bordure.svg" alt=""></button>
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu2-copy-style-no-bordure.svg" alt=""></button>
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu2-paste-style-no-bordure.svg" alt=""></button>
+            </div>
+        </div>
+        <div class="menu3" style="margin-right: 30px;">
+            <h4 class="lead text-dark">Elements</h4>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu3-cell-no-bordure.svg" id="addTopic"></button>
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu3-join-no-bordure.svg" alt="" id="addJoin"></button>
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu3-image-no-bordure.svg"></button>
+                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu3-text-no-bordure.svg" alt=""></button>
+            </div>
+        </div>
+        <div class="menu4" style="margin-right: 30px;">
+            <h4 class="lead text-dark">Style</h4>
+            <div class="card">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link p-0 active" id="home-tab" data-toggle="tab" href="#one" role="tab" aria-controls="home" aria-selected="true"><img src="img/Menu4-1-map-no-bordure.svg"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" id="profile-tab" data-toggle="tab" href="#two" role="tab" aria-controls="profile" aria-selected="false"><img src="img/Menu4-2-cell-no-bordure.svg"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" id="contact-tab" data-toggle="tab" href="#three" role="tab" aria-controls="contact" aria-selected="false"><img src="img/Menu4-3-join-no-bordure.svg"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" id="contact-tab" data-toggle="tab" href="#four" role="tab" aria-controls="contact" aria-selected="false"><img src="img/Menu4-4-image-no-bordure.svg"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" id="contact-tab" data-toggle="tab" href="#five" role="tab" aria-controls="contact" aria-selected="false"><img src="img/Menu4-5-text-no-bordure.svg"></a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3">
+                            <p>Color</p>
+                            <div class="form-group row">
+                                <form>
+                                    <input type="color" value="#000000" id="favcolor" list="colorList">
+                                    <datalist id="colorList">
+                                        <option value="#ffffff" label="White">
+                                        <option value="#000000" label="Black">
+                                        <option value="#ffff00" label="Yellow">
+                                        <option value="#996633" label="Brown">
+                                        <option value="#ff0000" label="Red">
+                                        <option value="#c4c4c4" label="Gray">
+                                        <option value="#660099" label="Violet">
+                                        <option value="#333399" label="DarkSlateBlue">
+                                        <option value="#003399" label="DarkBlue">
+                                        <option value="#0099cc" label="LightSeaGreen">
+                                        <option value="#009966" label="Teal">
+                                    </datalist>
+                                </form>
+                                <span id="hex" class="mr-3 ml-3">#000000</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3">
+                            <p>Align</p>
+                            <div class="btn-group btn-group-toggle h-25 w-50" data-toggle="buttons">
+                                <label class="btn btn-light btn-sm border p-0 active">
+                                    <input type="radio" name="options" id="option1" checked><img src="img/Menu4-1-map-aligin-left-no-bordure.svg">
+                                </label>
+                                <label class="btn btn-light btn-sm border p-0">
+                                    <input type="radio" name="options" id="option2"> <img src="img/Menu4-1-map-aligin-center-no-bordure.svg">
+                                </label>
+                                <label class="btn btn-light btn-sm border p-0">
+                                    <input type="radio" name="options" id="option3"> <img src="img/Menu4-1-map-aligin-right-no-bordure.svg">
+                                </label>
+                                </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3">
+                            <p>Theme</p>
+                            <p style="text-decoration: underline;">My thems</p>
+                        </div>
                     </div>
-                </div>
-                <div class="menu2" style="margin-right: 30px;">
-                    <h4 class="lead text-dark">Tools</h4>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu2-delete-no-bordure.svg" id="delete"></button>
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu2-undo-no-bordure.svg" alt="" id="undo"></button>
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu2-return-no-bordure.svg" id="redo"></button>
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu2-focus-no-bordure.svg" alt=""></button>
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu2-copy-style-no-bordure.svg" alt=""></button>
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu2-paste-style-no-bordure.svg" alt=""></button>
+                    <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3">
+                            <p>Color</p>
+                            <div class="form-group row">
+                                <form>
+                                    <input type="color" value="#000000" id="favcolor1" list="colorList">
+                                    <datalist id="colorList">
+                                        <option value="##ffffff" label="White">
+                                        <option value="#000000" label="Black">
+                                        <option value="#ffff00" label="Yellow">
+                                        <option value="#996633" label="Brown">
+                                        <option value="#ff0000" label="Red">
+                                        <option value="#c4c4c4" label="Gray">
+                                        <option value="#660099" label="Violet">
+                                        <option value="#333399" label="DarkSlateBlue">
+                                        <option value="#003399" label="DarkBlue">
+                                        <option value="#0099cc" label="LightSeaGreen">
+                                        <option value="#009966" label="Teal">
+                                    </datalist>
+                                </form>
+                                <span id="hex1" class="mr-3 ml-3">#000000</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3">
+                            <p>Border color</p>
+                            <div class="form-group row">
+                                <form>
+                                    <input type="color" value="#000000" id="favcolor2" list="colorList">
+                                    <datalist id="colorList">
+                                        <option value="##ffffff" label="White">
+                                        <option value="#000000" label="Black">
+                                        <option value="#ffff00" label="Yellow">
+                                        <option value="#996633" label="Brown">
+                                        <option value="#ff0000" label="Red">
+                                        <option value="#c4c4c4" label="Gray">
+                                        <option value="#660099" label="Violet">
+                                        <option value="#333399" label="DarkSlateBlue">
+                                        <option value="#003399" label="DarkBlue">
+                                        <option value="#0099cc" label="LightSeaGreen">
+                                        <option value="#009966" label="Teal">
+                                    </datalist>
+                                </form>
+                                <span id="hex2" class="mr-3 ml-3">#000000</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3">
+                            <p>Border</p>
+                            <!-- <p><a style="text-decoration: underline;">10</a> px.</p> -->
+                            <div class="form-group row">
+                                <input id="number" class="form-control-sm w-25 ml-auto" min="0" type="number" value="10">
+                                <span class="mr-3 ml-3">px.</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between ml-3">
+                            <p>Radius</p>
+                            <p>
+                                <input id="number" class="form-control-sm w-50 float-right mr-3" min="0" type="number" value="6">
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="menu3" style="margin-right: 30px;">
-                    <h4 class="lead text-dark">Elements</h4>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu3-cell-no-bordure.svg" id="addTopic"></button>
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu3-join-no-bordure.svg" alt="" id="addJoin"></button>
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu3-image-no-bordure.svg"></button>
-                        <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu3-text-no-bordure.svg" alt=""></button>
+                    <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3">
+                            <p>Color</p>
+                            <div class="form-group row">
+                                <form>
+                                    <input type="color" value="#000000" id="favcolor3" list="colorList">
+                                    <datalist id="colorList">
+                                        <option value="##ffffff" label="White">
+                                        <option value="#000000" label="Black">
+                                        <option value="#ffff00" label="Yellow">
+                                        <option value="#996633" label="Brown">
+                                        <option value="#ff0000" label="Red">
+                                        <option value="#c4c4c4" label="Gray">
+                                        <option value="#660099" label="Violet">
+                                        <option value="#333399" label="DarkSlateBlue">
+                                        <option value="#003399" label="DarkBlue">
+                                        <option value="#0099cc" label="LightSeaGreen">
+                                        <option value="#009966" label="Teal">
+                                    </datalist>
+                                </form>
+                                <span id="hex3" class="mr-3 ml-3">#000000</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3">
+                            <p>Thickness</p>
+                            <!-- <p><a style="text-decoration: underline;">3</a> px.</p> -->
+                            <div class="form-group row">
+                                <input id="number" class="form-control-sm w-25 ml-auto" min="0" type="number" value="3">
+                                <span class="mr-3 ml-3">px.</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="menu4" style="margin-right: 30px;">
-                    <h4 class="lead text-dark">Style</h4>
-                    <div class="card">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link p-0 active" id="home-tab" data-toggle="tab" href="#one" role="tab" aria-controls="home" aria-selected="true"><img src="img/Menu4-1-map-no-bordure.svg"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link p-0" id="profile-tab" data-toggle="tab" href="#two" role="tab" aria-controls="profile" aria-selected="false"><img src="img/Menu4-2-cell-no-bordure.svg"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link p-0" id="contact-tab" data-toggle="tab" href="#three" role="tab" aria-controls="contact" aria-selected="false"><img src="img/Menu4-3-join-no-bordure.svg"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link p-0" id="contact-tab" data-toggle="tab" href="#four" role="tab" aria-controls="contact" aria-selected="false"><img src="img/Menu4-4-image-no-bordure.svg"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link p-0" id="contact-tab" data-toggle="tab" href="#five" role="tab" aria-controls="contact" aria-selected="false"><img src="img/Menu4-5-text-no-bordure.svg"></a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="home-tab">
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3">
-                                    <p>Color</p>
-                                    <div class="form-group row">
-                                        <form>
-                                            <input type="color" value="#000000" id="favcolor" list="colorList">
-                                            <datalist id="colorList">
-                                                <option value="#ffffff" label="White">
-                                                <option value="#000000" label="Black">
-                                                <option value="#ffff00" label="Yellow">
-                                                <option value="#996633" label="Brown">
-                                                <option value="#ff0000" label="Red">
-                                                <option value="#c4c4c4" label="Gray">
-                                                <option value="#660099" label="Violet">
-                                                <option value="#333399" label="DarkSlateBlue">
-                                                <option value="#003399" label="DarkBlue">
-                                                <option value="#0099cc" label="LightSeaGreen">
-                                                <option value="#009966" label="Teal">
-                                            </datalist>
-                                        </form>
-                                        <span id="hex" class="mr-3 ml-3">#000000</span>
-                                    </div>
+                    <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3">
+                            <p>Size</p>
+                            <p>
+                                <div class="form-group row">
+                                    <input id="number" class="form-control-sm w-25 ml-auto" min="0" type="number" value="1600">
+                                    <p class="mt-1 mr-1 ml-1">X</p>
+                                    <input id="number" class="form-control-sm w-25" type="number" min="0" value="1600">
                                 </div>
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3">
-                                    <p>Align</p>
-                                    <div class="btn-group btn-group-toggle h-25 w-50" data-toggle="buttons">
-                                        <label class="btn btn-light btn-sm border p-0 active">
-                                          <input type="radio" name="options" id="option1" checked><img src="img/Menu4-1-map-aligin-left-no-bordure.svg">
-                                        </label>
-                                        <label class="btn btn-light btn-sm border p-0">
-                                          <input type="radio" name="options" id="option2"> <img src="img/Menu4-1-map-aligin-center-no-bordure.svg">
-                                        </label>
-                                        <label class="btn btn-light btn-sm border p-0">
-                                          <input type="radio" name="options" id="option3"> <img src="img/Menu4-1-map-aligin-right-no-bordure.svg">
-                                        </label>
-                                      </div>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3">
-                                    <p>Theme</p>
-                                    <p style="text-decoration: underline;">My thems</p>
-                                </div>
+                            </p>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3">
+                            <p>Align</p>
+                            <div class="btn-group btn-group-toggle h-25 w-50" data-toggle="buttons">
+                                <label class="btn btn-light btn-sm border p-0 active">
+                                    <input type="radio" name="options" id="option1" checked><img src="img/Menu4-4-image-aligin-left-no-bordure.svg">
+                                </label>
+                                <label class="btn btn-light btn-sm border p-0">
+                                    <input type="radio" name="options" id="option2"> <img src="img/Menu4-4-image-aligin-center-no-bordure.svg">
+                                </label>
+                                <label class="btn btn-light btn-sm border p-0">
+                                    <input type="radio" name="options" id="option3"> <img src="img/Menu4-4-image-aligin-right-no-bordure.svg">
+                                </label>
                             </div>
-                            <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="profile-tab">
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3">
-                                    <p>Color</p>
-                                    <div class="form-group row">
-                                        <form>
-                                            <input type="color" value="#000000" id="favcolor1" list="colorList">
-                                            <datalist id="colorList">
-                                                <option value="##ffffff" label="White">
-                                                <option value="#000000" label="Black">
-                                                <option value="#ffff00" label="Yellow">
-                                                <option value="#996633" label="Brown">
-                                                <option value="#ff0000" label="Red">
-                                                <option value="#c4c4c4" label="Gray">
-                                                <option value="#660099" label="Violet">
-                                                <option value="#333399" label="DarkSlateBlue">
-                                                <option value="#003399" label="DarkBlue">
-                                                <option value="#0099cc" label="LightSeaGreen">
-                                                <option value="#009966" label="Teal">
-                                            </datalist>
-                                        </form>
-                                        <span id="hex1" class="mr-3 ml-3">#000000</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3">
-                                    <p>Border color</p>
-                                    <div class="form-group row">
-                                        <form>
-                                            <input type="color" value="#000000" id="favcolor2" list="colorList">
-                                            <datalist id="colorList">
-                                                <option value="##ffffff" label="White">
-                                                <option value="#000000" label="Black">
-                                                <option value="#ffff00" label="Yellow">
-                                                <option value="#996633" label="Brown">
-                                                <option value="#ff0000" label="Red">
-                                                <option value="#c4c4c4" label="Gray">
-                                                <option value="#660099" label="Violet">
-                                                <option value="#333399" label="DarkSlateBlue">
-                                                <option value="#003399" label="DarkBlue">
-                                                <option value="#0099cc" label="LightSeaGreen">
-                                                <option value="#009966" label="Teal">
-                                            </datalist>
-                                        </form>
-                                        <span id="hex2" class="mr-3 ml-3">#000000</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3">
-                                    <p>Border</p>
-                                    <!-- <p><a style="text-decoration: underline;">10</a> px.</p> -->
-                                    <div class="form-group row">
-                                        <input id="number" class="form-control-sm w-25 ml-auto" min="0" type="number" value="10">
-                                        <span class="mr-3 ml-3">px.</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between ml-3">
-                                    <p>Radius</p>
-                                    <p>
-                                        <input id="number" class="form-control-sm w-50 float-right mr-3" min="0" type="number" value="6">
-                                    </p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3">
+                            <p>Color</p>
+                            <div class="form-group row">
+                                <form>
+                                    <input type="color" value="#000000" id="favcolor4" list="colorList">
+                                    <datalist id="colorList">
+                                        <option value="##ffffff" label="White">
+                                        <option value="#000000" label="Black">
+                                        <option value="#ffff00" label="Yellow">
+                                        <option value="#996633" label="Brown">
+                                        <option value="#ff0000" label="Red">
+                                        <option value="#c4c4c4" label="Gray">
+                                        <option value="#660099" label="Violet">
+                                        <option value="#333399" label="DarkSlateBlue">
+                                        <option value="#003399" label="DarkBlue">
+                                        <option value="#0099cc" label="LightSeaGreen">
+                                        <option value="#009966" label="Teal">
+                                    </datalist>
+                                </form>
+                                <span id="hex4" class="mr-3 ml-3">#000000</span>
                             </div>
-                            <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="contact-tab">
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3">
-                                    <p>Color</p>
-                                    <div class="form-group row">
-                                        <form>
-                                            <input type="color" value="#000000" id="favcolor3" list="colorList">
-                                            <datalist id="colorList">
-                                                <option value="##ffffff" label="White">
-                                                <option value="#000000" label="Black">
-                                                <option value="#ffff00" label="Yellow">
-                                                <option value="#996633" label="Brown">
-                                                <option value="#ff0000" label="Red">
-                                                <option value="#c4c4c4" label="Gray">
-                                                <option value="#660099" label="Violet">
-                                                <option value="#333399" label="DarkSlateBlue">
-                                                <option value="#003399" label="DarkBlue">
-                                                <option value="#0099cc" label="LightSeaGreen">
-                                                <option value="#009966" label="Teal">
-                                            </datalist>
-                                        </form>
-                                        <span id="hex3" class="mr-3 ml-3">#000000</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3">
-                                    <p>Thickness</p>
-                                    <!-- <p><a style="text-decoration: underline;">3</a> px.</p> -->
-                                    <div class="form-group row">
-                                        <input id="number" class="form-control-sm w-25 ml-auto" min="0" type="number" value="3">
-                                        <span class="mr-3 ml-3">px.</span>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3">
+                            <p>Align g.</p>
+                            <div class="btn-group btn-group-toggle h-25 w-50" data-toggle="buttons">
+                                <label class="btn btn-light btn-sm border p-0 active">
+                                    <input type="radio" name="options" id="option1" checked> <img src="img/Menu4-5-text-aligin-left-no-bordure.svg">
+                                </label>
+                                <label class="btn btn-light btn-sm border p-0">
+                                    <input type="radio" name="options" id="option2"> <img src="img/Menu4-5-text-aligin-center-no-bordure.svg">
+                                </label>
+                                <label class="btn btn-light btn-sm border p-0">
+                                    <input type="radio" name="options" id="option3"> <img src="img/Menu4-5-text-aligin-right-no-bordure.svg">
+                                </label>
                             </div>
-                            <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="contact-tab">
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3">
-                                    <p>Size</p>
-                                    <p>
-                                        <div class="form-group row">
-                                            <input id="number" class="form-control-sm w-25 ml-auto" min="0" type="number" value="1600">
-                                            <p class="mt-1 mr-1 ml-1">X</p>
-                                            <input id="number" class="form-control-sm w-25" type="number" min="0" value="1600">
-                                        </div>
-                                    </p>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3">
-                                    <p>Align</p>
-                                    <div class="btn-group btn-group-toggle h-25 w-50" data-toggle="buttons">
-                                        <label class="btn btn-light btn-sm border p-0 active">
-                                          <input type="radio" name="options" id="option1" checked><img src="img/Menu4-4-image-aligin-left-no-bordure.svg">
-                                        </label>
-                                        <label class="btn btn-light btn-sm border p-0">
-                                          <input type="radio" name="options" id="option2"> <img src="img/Menu4-4-image-aligin-center-no-bordure.svg">
-                                        </label>
-                                        <label class="btn btn-light btn-sm border p-0">
-                                          <input type="radio" name="options" id="option3"> <img src="img/Menu4-4-image-aligin-right-no-bordure.svg">
-                                        </label>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3">
+                            <p>Align h.</p>
+                            <div class="btn-group btn-group-toggle h-25 w-50" data-toggle="buttons">
+                                <label class="btn btn-light btn-sm border p-0 active">
+                                    <input type="radio" name="options" id="option1" checked> <img src="img/Menu4-5-text-aligin-bott-no-bordure.svg">
+                                </label>
+                                <label class="btn btn-light btn-sm border p-0">
+                                    <input type="radio" name="options" id="option2"> <img src="img/Menu4-5-text-aligin-mid-no-bordure.svg">
+                                </label>
+                                <label class="btn btn-light btn-sm border p-0">
+                                    <input type="radio" name="options" id="option3"> <img src="img/Menu4-5-text-aligin-top-no-bordure.svg">
+                                </label>
                             </div>
-                            <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="contact-tab">
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3">
-                                    <p>Color</p>
-                                    <div class="form-group row">
-                                        <form>
-                                            <input type="color" value="#000000" id="favcolor4" list="colorList">
-                                            <datalist id="colorList">
-                                                <option value="##ffffff" label="White">
-                                                <option value="#000000" label="Black">
-                                                <option value="#ffff00" label="Yellow">
-                                                <option value="#996633" label="Brown">
-                                                <option value="#ff0000" label="Red">
-                                                <option value="#c4c4c4" label="Gray">
-                                                <option value="#660099" label="Violet">
-                                                <option value="#333399" label="DarkSlateBlue">
-                                                <option value="#003399" label="DarkBlue">
-                                                <option value="#0099cc" label="LightSeaGreen">
-                                                <option value="#009966" label="Teal">
-                                            </datalist>
-                                        </form>
-                                        <span id="hex4" class="mr-3 ml-3">#000000</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3">
-                                    <p>Align g.</p>
-                                    <div class="btn-group btn-group-toggle h-25 w-50" data-toggle="buttons">
-                                        <label class="btn btn-light btn-sm border p-0 active">
-                                          <input type="radio" name="options" id="option1" checked> <img src="img/Menu4-5-text-aligin-left-no-bordure.svg">
-                                        </label>
-                                        <label class="btn btn-light btn-sm border p-0">
-                                          <input type="radio" name="options" id="option2"> <img src="img/Menu4-5-text-aligin-center-no-bordure.svg">
-                                        </label>
-                                        <label class="btn btn-light btn-sm border p-0">
-                                          <input type="radio" name="options" id="option3"> <img src="img/Menu4-5-text-aligin-right-no-bordure.svg">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3">
-                                    <p>Align h.</p>
-                                    <div class="btn-group btn-group-toggle h-25 w-50" data-toggle="buttons">
-                                        <label class="btn btn-light btn-sm border p-0 active">
-                                          <input type="radio" name="options" id="option1" checked> <img src="img/Menu4-5-text-aligin-bott-no-bordure.svg">
-                                        </label>
-                                        <label class="btn btn-light btn-sm border p-0">
-                                          <input type="radio" name="options" id="option2"> <img src="img/Menu4-5-text-aligin-mid-no-bordure.svg">
-                                        </label>
-                                        <label class="btn btn-light btn-sm border p-0">
-                                          <input type="radio" name="options" id="option3"> <img src="img/Menu4-5-text-aligin-top-no-bordure.svg">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3">
-                                    <p>Type</p>
-                                    <div class="btn-group btn-group-toggle h-25 w-50" data-toggle="buttons">
-                                        <label class="btn btn-light btn-sm border p-0 active">
-                                          <input type="radio" name="options" id="option1" checked> <img src="img/Menu4-5-text-bold-no-bordure.svg">
-                                        </label>
-                                        <label class="btn btn-light btn-sm border p-0">
-                                          <input type="radio" name="options" id="option2"> <img src="img/Menu4-5-text-italic-no-bordure.svg">
-                                        </label>
-                                        <label class="btn btn-light btn-sm border p-0">
-                                          <input type="radio" name="options" id="option3"> <img src="img/Menu4-5-text-underline-no-bordure.svg">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3">
-                                    <p>Size</p>
-                                    <div class="form-group row">
-                                        <input id="number" class="form-control-sm w-25 ml-auto" min="0" type="number" value="16">
-                                        <span class="mr-3 ml-3">px.</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between ml-3 mr-3">
-                                    <p>Font</p>
-                                    <select class="form-control-sm">
-                                        <option class="Times-New-Roman" value="Times-New-Roman">Times New Roman</option>
-                                        <option class="Verdana" value="Verdana">Verdana</option>
-                                        <option value="Comic-Sans-MS">Comic Sans MS</option>
-                                        <option value="WildWest">WildWest</option>
-                                        <option value="Bedrock">Bedrock</option>
-                                    </select>
-                                </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3">
+                            <p>Type</p>
+                            <div class="btn-group btn-group-toggle h-25 w-50" data-toggle="buttons">
+                                <label class="btn btn-light btn-sm border p-0 active">
+                                    <input type="radio" name="options" id="option1" checked> <img src="img/Menu4-5-text-bold-no-bordure.svg">
+                                </label>
+                                <label class="btn btn-light btn-sm border p-0">
+                                    <input type="radio" name="options" id="option2"> <img src="img/Menu4-5-text-italic-no-bordure.svg">
+                                </label>
+                                <label class="btn btn-light btn-sm border p-0">
+                                    <input type="radio" name="options" id="option3"> <img src="img/Menu4-5-text-underline-no-bordure.svg">
+                                </label>
                             </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3">
+                            <p>Size</p>
+                            <div class="form-group row">
+                                <input id="number" class="form-control-sm w-25 ml-auto" min="0" type="number" value="16">
+                                <span class="mr-3 ml-3">px.</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3">
+                            <p>Font</p>
+                            <select class="form-control-sm">
+                                <option class="Times-New-Roman" value="Times-New-Roman">Times New Roman</option>
+                                <option class="Verdana" value="Verdana">Verdana</option>
+                                <option value="Comic-Sans-MS">Comic Sans MS</option>
+                                <option value="WildWest">WildWest</option>
+                                <option value="Bedrock">Bedrock</option>
+                            </select>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <script>
 
     var theInput = document.getElementById("favcolor");
