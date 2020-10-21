@@ -5,6 +5,10 @@
     margin: 5%;
 }
 
+body{
+    width: 100%;
+}
+
 .panel {
     float: right;
     top: 0px;
