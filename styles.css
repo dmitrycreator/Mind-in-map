@@ -35,8 +35,7 @@ a.homeTab {
 }
 
 .homeTab.nav-link.active{
-    position: initial;
-    bottom: 20;
+    /*  */
 }
 
 #favcolor, #favcolor1, #favcolor2, #favcolor3, #favcolor4, #number{

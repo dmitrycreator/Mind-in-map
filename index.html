@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/scripts.js" type="script"></script>
 </head>
 
 <body>
@@ -85,7 +86,7 @@
                             <p>Color</p>
                             <div class="form-group row">
                                 <form>
-                                    <input type="color" value="#000000" id="favcolor" list="colorList">
+                                    <input type="color" value="#000000" id="favcolor" list="colorList" style="width: 90px; height: 23px;">
                                     <datalist id="colorList">
                                         <option value="#ffffff" label="White">
                                         <option value="#000000" label="Black">
@@ -100,13 +101,14 @@
                                         <option value="#009966" label="Teal">
                                     </datalist>
                                 </form>
-                                <span id="hex" class="mr-3 ml-3">#000000</span>
+                                <!-- <span id="hex" class="mr-3 ml-3">#000000</span> -->
+                                <input class="form-control form-control-sm ml-2 mr-3" id="hex" type="text" placeholder="#000000" style="width: 80px; height: 23px;">
                             </div>
                         </div>
                         <div class="d-flex flex-row justify-content-between ml-3 mr-3">
                             <p>Align</p>
                             <div class="btn-group btn-group-toggle h-25 w-50" data-toggle="buttons">
-                                <label class="btn btn-light btn-sm border p-0 active">
+                                <label class="btn btn-light btn-sm border p-0">
                                     <input type="radio" name="options" id="option1" checked><img src="img/Menu4-1-map-aligin-left-no-bordure.svg">
                                 </label>
                                 <label class="btn btn-light btn-sm border p-0">
@@ -123,35 +125,38 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3">
+                        <div class="d-flex flex-row justify-content-between ml-3 mt-3">
                             <p>Color</p>
-                            <div class="form-group row">
-                                <form>
-                                    <input type="color" value="#000000" id="favcolor1" list="colorList">
-                                    <datalist id="colorList">
-                                        <option value="##ffffff" label="White">
-                                        <option value="#000000" label="Black">
-                                        <option value="#ffff00" label="Yellow">
-                                        <option value="#996633" label="Brown">
-                                        <option value="#ff0000" label="Red">
-                                        <option value="#c4c4c4" label="Gray">
-                                        <option value="#660099" label="Violet">
-                                        <option value="#333399" label="DarkSlateBlue">
-                                        <option value="#003399" label="DarkBlue">
-                                        <option value="#0099cc" label="LightSeaGreen">
-                                        <option value="#009966" label="Teal">
-                                    </datalist>
-                                </form>
-                                <span id="hex1" class="mr-3 ml-3">#000000</span>
+                            <div class="form-group row mr-3 mb-0">
+                                <div class="form-group row">
+                                    <form>
+                                        <input type="color" value="#000000" id="favcolor1" list="colorList" style="width: 90px; height: 23px;">
+                                        <datalist id="colorList">
+                                            <option value="#ffffff" label="White">
+                                            <option value="#000000" label="Black">
+                                            <option value="#ffff00" label="Yellow">
+                                            <option value="#996633" label="Brown">
+                                            <option value="#ff0000" label="Red">
+                                            <option value="#c4c4c4" label="Gray">
+                                            <option value="#660099" label="Violet">
+                                            <option value="#333399" label="DarkSlateBlue">
+                                            <option value="#003399" label="DarkBlue">
+                                            <option value="#0099cc" label="LightSeaGreen">
+                                            <option value="#009966" label="Teal">
+                                        </datalist>
+                                    </form>
+                                    <!-- <span id="hex" class="mr-3 ml-3">#000000</span> -->
+                                    <input class="form-control form-control-sm ml-2 mr-3" id="hex1" type="text" placeholder="#000000" style="width: 80px; height: 23px;">
+                                </div>
                             </div>
                         </div>
                         <div class="d-flex flex-row justify-content-between ml-3 mr-3">
                             <p>Border color</p>
                             <div class="form-group row">
                                 <form>
-                                    <input type="color" value="#000000" id="favcolor2" list="colorList">
+                                    <input type="color" value="#000000" id="favcolor2" list="colorList" style="width: 90px; height: 23px;">
                                     <datalist id="colorList">
-                                        <option value="##ffffff" label="White">
+                                        <option value="#ffffff" label="White">
                                         <option value="#000000" label="Black">
                                         <option value="#ffff00" label="Yellow">
                                         <option value="#996633" label="Brown">
@@ -164,22 +169,22 @@
                                         <option value="#009966" label="Teal">
                                     </datalist>
                                 </form>
-                                <span id="hex2" class="mr-3 ml-3">#000000</span>
+                                <!-- <span id="hex" class="mr-3 ml-3">#000000</span> -->
+                                <input class="form-control form-control-sm ml-2 mr-3" id="hex2" type="text" placeholder="#000000" style="width: 80px; height: 23px;">
                             </div>
                         </div>
                         <div class="d-flex flex-row justify-content-between ml-3 mr-3">
                             <p>Border</p>
                             <!-- <p><a style="text-decoration: underline;">10</a> px.</p> -->
                             <div class="form-group row">
-                                <input id="number" class="form-control-sm w-25 ml-auto" min="0" type="number" value="10">
-                                <span class="mr-3 ml-3">px.</span>
+                                <input id="number" class="form-control form-control-sm  ml-auto mt-1" min="0" type="number" value="10" style="width: 60px; height: 23px;">
+                                <span class="mr-3 ml-2 mt-1">px.</span>
                             </div>
                         </div>
-                        <div class="d-flex flex-row justify-content-between ml-3">
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3">
                             <p>Radius</p>
-                            <p>
-                                <input id="number" class="form-control-sm w-50 float-right mr-3" min="0" type="number" value="6">
-                            </p>
+                            <!-- <p><a style="text-decoration: underline;">10</a> px.</p> -->
+                            <input id="number" class="form-control form-control-sm  ml-auto mt-1" min="0" type="number" value="10" style="width: 60px; height: 23px;">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="contact-tab">
@@ -187,9 +192,9 @@
                             <p>Color</p>
                             <div class="form-group row">
                                 <form>
-                                    <input type="color" value="#000000" id="favcolor3" list="colorList">
+                                    <input type="color" value="#000000" id="favcolor3" list="colorList" style="width: 90px; height: 23px;">
                                     <datalist id="colorList">
-                                        <option value="##ffffff" label="White">
+                                        <option value="#ffffff" label="White">
                                         <option value="#000000" label="Black">
                                         <option value="#ffff00" label="Yellow">
                                         <option value="#996633" label="Brown">
@@ -202,26 +207,27 @@
                                         <option value="#009966" label="Teal">
                                     </datalist>
                                 </form>
-                                <span id="hex3" class="mr-3 ml-3">#000000</span>
+                                <!-- <span id="hex" class="mr-3 ml-3">#000000</span> -->
+                                <input class="form-control form-control-sm ml-2 mr-3" id="hex3" type="text" placeholder="#000000" style="width: 80px; height: 23px;">
                             </div>
                         </div>
                         <div class="d-flex flex-row justify-content-between ml-3 mr-3">
                             <p>Thickness</p>
                             <!-- <p><a style="text-decoration: underline;">3</a> px.</p> -->
                             <div class="form-group row">
-                                <input id="number" class="form-control-sm w-25 ml-auto" min="0" type="number" value="3">
-                                <span class="mr-3 ml-3">px.</span>
+                                <input id="number" class="form-control form-control-sm  ml-auto mt-1" min="0" type="number" value="10" style="width: 60px; height: 23px;">
+                                <span class="mr-3 ml-2 mt-1">px.</span>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="contact-tab">
-                        <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3">
+                        <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3" style="margin-bottom: -10px;">
                             <p>Size</p>
                             <p>
-                                <div class="form-group row">
-                                    <input id="number" class="form-control-sm w-25 ml-auto" min="0" type="number" value="1600">
-                                    <p class="mt-1 mr-1 ml-1">X</p>
-                                    <input id="number" class="form-control-sm w-25" type="number" min="0" value="1600">
+                                <div class="form-group row ml-auto mr-1">
+                                    <input id="number" class="form-control form-control-sm mt-1" min="0" type="number" value="1600" style="width: 80px; height: 23px;">
+                                    <p class="mt-1 ml-1 mr-1">х</p>
+                                    <input id="number" class="form-control form-control-sm mt-1" min="0" type="number" value="1600" style="width: 80px; height: 23px;">
                                 </div>
                             </p>
                         </div>
@@ -245,9 +251,9 @@
                             <p>Color</p>
                             <div class="form-group row">
                                 <form>
-                                    <input type="color" value="#000000" id="favcolor4" list="colorList">
+                                    <input type="color" value="#000000" id="favcolor4" list="colorList" style="width: 90px; height: 23px;">
                                     <datalist id="colorList">
-                                        <option value="##ffffff" label="White">
+                                        <option value="#ffffff" label="White">
                                         <option value="#000000" label="Black">
                                         <option value="#ffff00" label="Yellow">
                                         <option value="#996633" label="Brown">
@@ -260,7 +266,8 @@
                                         <option value="#009966" label="Teal">
                                     </datalist>
                                 </form>
-                                <span id="hex4" class="mr-3 ml-3">#000000</span>
+                                <!-- <span id="hex" class="mr-3 ml-3">#000000</span> -->
+                                <input class="form-control form-control-sm ml-2 mr-3" id="hex4" type="text" placeholder="#000000" style="width: 80px; height: 23px;">
                             </div>
                         </div>
                         <div class="d-flex flex-row justify-content-between ml-3 mr-3">
@@ -307,14 +314,15 @@
                         </div>
                         <div class="d-flex flex-row justify-content-between ml-3 mr-3">
                             <p>Size</p>
+                            <!-- <p><a style="text-decoration: underline;">10</a> px.</p> -->
                             <div class="form-group row">
-                                <input id="number" class="form-control-sm w-25 ml-auto" min="0" type="number" value="16">
-                                <span class="mr-3 ml-3">px.</span>
+                                <input id="number" class="form-control form-control-sm  ml-auto mt-1" min="0" type="number" value="10" style="width: 60px; height: 23px;">
+                                <span class="mr-3 ml-2 mt-1">px.</span>
                             </div>
                         </div>
                         <div class="d-flex flex-row justify-content-between ml-3 mr-3">
                             <p>Font</p>
-                            <select class="form-control-sm" id="fontSelect">
+                            <select class="form-control form-control-sm" id="fontSelect" style="width: 150px; height: 30px;">
                                 <option class="Times-New-Roman" value="Times-New-Roman">Times New Roman</option>
                                 <option class="Verdana" value="Verdana">Verdana</option>
                                 <option value="Comic-Sans-MS">Comic Sans MS</option>
@@ -328,40 +336,59 @@
         </div>
     <script>
 
-    var theInput = document.getElementById("favcolor");
-    var theColor = theInput.value;
-    theInput.addEventListener("input", function() {
+    /**************************** color to text ****************************/
 
-    document.getElementById("hex").innerHTML = theInput.value;
-    }, false);
+    $('#favcolor').change(function(){
+        $('#hex').val($(this).val());
+        console.log($(this).val());
+    });
 
-    var theInput1 = document.getElementById("favcolor1");
-    var theColor1 = theInput1.value;
-    theInput1.addEventListener("input", function() {
+    $('#favcolor1').change(function(){
+        $('#hex1').val($(this).val());
+        console.log($(this).val());
+    });
 
-    document.getElementById("hex1").innerHTML = theInput1.value;
-    }, false);
+    $('#favcolor2').change(function(){
+        $('#hex2').val($(this).val());
+        console.log($(this).val());
+    });
 
-    var theInput2 = document.getElementById("favcolor2");
-    var theColor2 = theInput2.value;
-    theInput2.addEventListener("input", function() {
+    $('#favcolor3').change(function(){
+        $('#hex3').val($(this).val());
+        console.log($(this).val());
+    });
 
-    document.getElementById("hex2").innerHTML = theInput2.value;
-    }, false);
+    $('#favcolor4').change(function(){
+        $('#hex4').val($(this).val());
+        console.log($(this).val());
+    });
 
-    var theInput3 = document.getElementById("favcolor3");
-    var theColor3 = theInput.value;
-    theInput3.addEventListener("input", function() {
+    /**************************** text to color ****************************/
 
-    document.getElementById("hex3").innerHTML = theInput3.value;
-    }, false);
+    $('#hex').change(function(){
+        $('#favcolor').val($(this).val());
+        console.log($(this).val());
+    });
 
-    var theInput4 = document.getElementById("favcolor4");
-    var theColor4 = theInput.value;
-    theInput4.addEventListener("input", function() {
+    $('#hex1').change(function(){
+        $('#favcolor1').val($(this).val());
+        console.log($(this).val());
+    });
 
-    document.getElementById("hex4").innerHTML = theInput4.value;
-    }, false);
+    $('#hex2').change(function(){
+        $('#favcolor2').val($(this).val());
+        console.log($(this).val());
+    });
+
+    $('#hex3').change(function(){
+        $('#favcolor3').val($(this).val());
+        console.log($(this).val());
+    });
+
+    $('#hex4').change(function(){
+        $('#favcolor4').val($(this).val());
+        console.log($(this).val());
+    });
 
     </script>
 </body>
