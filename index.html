@@ -14,28 +14,18 @@
 
 <body>
     <div class="home">
-        <ul class="nav nav-tabs bg-dark border-0" style="padding-left: 8px; padding-top: 8px;">
-            <li class="tab1">
-                <a class="tabText nav-link border-bottom-0 border active" data-toggle="tab" href="#description">Tab1</a>
-            </li>
-            <li class="tab2">
-                <a class="tabText nav-link border-bottom-0 border" data-toggle="tab" href="#characteristics" style="margin-left: -1px;">Tab2</a>
-            </li>
-            <li class="tab3">
-                <a class="tabText nav-link border-bottom-0 border" data-toggle="tab" href="#opinion" style="margin-left: -1px;">Tab3</a>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane fade show active" id="description">
-                Tab1
+        <nav>
+            <div class="nav nav-tabs bg-dark pl-3 pt-3" id="nav-tab" role="tablist">
+              <a class="homeTab nav-item nav-link bg-white mr-1 active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+              <a class="homeTab nav-item nav-link bg-white mr-1" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+              <a class="homeTab nav-item nav-link bg-white" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
             </div>
-            <div class="tab-pane fade" id="characteristics">
-                Tab2
-            </div>
-            <div class="tab-pane fade" id="opinion">
-                Tab3
-            </div>
-        </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Tab1</div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Tab2</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Tab3</div>
+          </div>
     </div>
     <div class="panel">
         <div class="menu1" style="margin-right: 30px;">
@@ -72,7 +62,7 @@
         <div class="menu4" style="margin-right: 30px;">
             <h4 class="lead text-dark">Style</h4>
             <div class="card border-0">
-                <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#one" role="tab" aria-controls="home" aria-selected="true" style="padding: 4px 8px;"><img src="img/Menu4-1-map-no-bordure.svg"></a>
                     </li>
@@ -89,7 +79,7 @@
                         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#five" role="tab" aria-controls="contact" aria-selected="false" style="padding: 4px 8px;"><img src="img/Menu4-5-text-no-bordure.svg"></a>
                     </li>
                 </ul>
-                <div class="tab-content border" id="myTabContent">
+                <div class="tab-content border border-top-0" id="myTabContent">
                     <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="home-tab">
                         <div class="d-flex flex-row justify-content-between ml-3 mr-3 mt-3">
                             <p>Color</p>

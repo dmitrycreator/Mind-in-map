@@ -27,82 +27,16 @@ body{
     position: absolute;
 }
 
-.tab1 {
-	float: left;
-
-	/* width: 100px;
-    height: 35px; */
-
-    /* padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px; */
-
-    outline: 4px solid transparent;
-
-	position: relative;
-
-    background: #fff;
-
+a.homeTab {
 	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-}
-
-.tab1:before {
-	content: "";
-	position: absolute;
-
-	height: 20px;
-	width: 20px;
-
-	bottom: 0;
-}
-
-.tab1:before {
-    left: -20px;
-    outline: 4px solid transparent;
-	border-radius: 0 0 4px 0;
-	box-shadow: 10px 0 0 0 #ffffff;
-}
-
-.tab2 {
-	float: left;
-
-	/* width: 100px;
-    height: 35px; */
-
-    /* padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px; */
-
-	position: relative;
-
-    background: #fff;
-
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-}
-
-.tab3 {
-	float: left;
-
-	/* width: 100px;
-    height: 35px; */
-
-    /* padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px; */
-
-	position: relative;
-
-	background: #fff;
-
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-}
-
-a.tabText{
-    box-sizing: border-box;
+    border-top-right-radius: 4px;
+    font-size: 15px;
     padding-right: 48px;
+}
+
+.homeTab.nav-link.active{
+    position: initial;
+    bottom: 20;
 }
 
 #favcolor, #favcolor1, #favcolor2, #favcolor3, #favcolor4, #number{
