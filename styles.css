@@ -104,3 +104,8 @@ a.tabText{
     box-sizing: border-box;
     padding-right: 48px;
 }
+
+#favcolor, #favcolor1, #favcolor2, #favcolor3, #favcolor4, #number{
+    border: 1px solid #dee2e6!important;
+    border-radius: .2rem;
+}
