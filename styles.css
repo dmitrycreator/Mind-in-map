@@ -34,8 +34,12 @@ a.homeTab {
     padding-right: 48px;
 }
 
-.homeTab.nav-link.active{
-    /*  */
+.homeTab.nav-item.nav-link.bg-white.active{
+    border-bottom: 0px;
+}
+
+.homeTab.nav-item.nav-link.bg-white{
+    border-bottom: 1px solid #343a40;
 }
 
 #favcolor, #favcolor1, #favcolor2, #favcolor3, #favcolor4, #number{
