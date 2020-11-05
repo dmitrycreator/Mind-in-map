@@ -17,15 +17,15 @@
     <div class="home">
         <nav>
             <div class="nav nav-tabs bg-dark pl-3 pt-3" id="nav-tab" role="tablist">
-              <a class="homeTab nav-item nav-link bg-white active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" style="margin-right: .25rem;">Home</a>
-              <a class="homeTab nav-item nav-link bg-white" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false" style="margin-right: .25rem;">Profile</a>
-              <a class="homeTab nav-item nav-link bg-white" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+              <a class="homeTab nav-item nav-link bg-white active" id="Tab1" data-toggle="tab" href="#nav-tab1" role="tab" aria-controls="nav-tab1" aria-selected="true" style="margin-right: .25rem;">Tab1</a>
+              <a class="homeTab nav-item nav-link bg-white" id="Tab2" data-toggle="tab" href="#nav-tab2" role="tab" aria-controls="nav-tab2" aria-selected="false" style="margin-right: .25rem;">Profile</a>
+              <a class="homeTab nav-item nav-link bg-white" id="Tab3" data-toggle="tab" href="#nav-tab3" role="tab" aria-controls="nav-tab3" aria-selected="false">Contact</a>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Tab1</div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Tab2</div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Tab3</div>
+            <div class="tab-pane fade show active" id="nav-tab1" role="tabpanel" aria-labelledby="Tab1">Tab1 content</div>
+            <div class="tab-pane fade" id="nav-tab2" role="tabpanel" aria-labelledby="Tab2">Tab2 content</div>
+            <div class="tab-pane fade" id="nav-tab3" role="tabpanel" aria-labelledby="Tab3">Tab3 content</div>
           </div>
     </div>
     <div class="panel">
@@ -65,19 +65,19 @@
             <div class="card border-0">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#one" role="tab" aria-controls="home" aria-selected="true" style="padding: 4px 8px;"><img src="img/Menu4-1-map-no-bordure.svg"></a>
+                        <a class="nav-link menu4nl active" id="home-tab" data-toggle="tab" href="#one" role="tab" aria-controls="home" aria-selected="true" style="padding: 4px 8px;"><img src="img/Menu4-1-map-no-bordure.svg"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#two" role="tab" aria-controls="profile" aria-selected="false" style="padding: 4px 8px;"><img src="img/Menu4-2-cell-no-bordure.svg"></a>
+                        <a class="nav-link menu4nl" id="profile-tab" data-toggle="tab" href="#two" role="tab" aria-controls="profile" aria-selected="false" style="padding: 4px 8px;"><img src="img/Menu4-2-cell-no-bordure.svg"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#three" role="tab" aria-controls="contact" aria-selected="false" style="padding: 4px 8px;"><img src="img/Menu4-3-join-no-bordure.svg"></a>
+                        <a class="nav-link menu4nl" id="contact-tab" data-toggle="tab" href="#three" role="tab" aria-controls="contact" aria-selected="false" style="padding: 4px 8px;"><img src="img/Menu4-3-join-no-bordure.svg"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#four" role="tab" aria-controls="contact" aria-selected="false" style="padding: 4px 8px;"><img src="img/Menu4-4-image-no-bordure.svg"></a>
+                        <a class="nav-link menu4nl" id="contact-tab" data-toggle="tab" href="#four" role="tab" aria-controls="contact" aria-selected="false" style="padding: 4px 8px;"><img src="img/Menu4-4-image-no-bordure.svg"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#five" role="tab" aria-controls="contact" aria-selected="false" style="padding: 4px 8px;"><img src="img/Menu4-5-text-no-bordure.svg"></a>
+                        <a class="nav-link menu4nl" id="contact-tab" data-toggle="tab" href="#five" role="tab" aria-controls="contact" aria-selected="false" style="padding: 4px 8px;"><img src="img/Menu4-5-text-no-bordure.svg"></a>
                     </li>
                 </ul>
                 <div class="tab-content border border-top-0" id="myTabContent">
@@ -337,8 +337,9 @@
     <script>
 
     /**************************** color to text ****************************/
-
-    $('#favcolor').change(function(){
+    $(document).ready(function(){
+        
+        $('#favcolor').change(function(){
         $('#hex').val($(this).val());
         console.log($(this).val());
     });
@@ -390,6 +391,20 @@
         console.log($(this).val());
     });
 
+    $('#Tab1').dblclick(function(){   
+        // $('#Tab1').css('padding', '3px');
+        // $('#Tab1').html('<input class="form-control">');
+        $('#Tab1').replaceWith('<input class="homeTab nav-item nav-link bg-white active" id="Tab1" data-toggle="tab" href="#nav-tab1" role="tab" aria-controls="nav-tab1" aria-selected="true" style="margin-right: .25rem;">')
+        $('#Tab1').keydown(function(e) {
+            if(e.keyCode === 13) {
+                //console.log($(this).val());
+                var text = $(this).val();
+                $('#Tab1').replaceWith('<a class="homeTab nav-item nav-link bg-white active" id="Tab1" data-toggle="tab" href="#nav-tab1" role="tab" aria-controls="nav-tab1" aria-selected="true" style="margin-right: .25rem;"></a>')
+                $('#Tab1').text(text);
+            }
+        });
+    });
+    });
     </script>
 </body>
 </html>

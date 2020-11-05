@@ -1,8 +1,17 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
 .menu1,
 .menu2,
 .menu3,
 .menu4 {
     margin: 5%;
+    margin-top: 20px;
 }
 
 body{
@@ -24,6 +33,8 @@ body{
     background-color: white;
     padding-right: 0%;
 
+    box-shadow: 5px 0px 20px 1px #000;
+
     position: absolute;
 }
 
@@ -38,8 +49,14 @@ a.homeTab {
     border-bottom: 0px;
 }
 
+.nav-link.menu4nl{
+    border-top: 1px solid #dee2e6!important;
+    border-left: 1px solid #dee2e6!important;
+    border-right: 1px solid #dee2e6!important;
+}
+
 .homeTab.nav-item.nav-link.bg-white{
-    border-bottom: 1px solid #343a40;
+    border-bottom: 1px solid #dee2e6;
 }
 
 #favcolor, #favcolor1, #favcolor2, #favcolor3, #favcolor4, #number{
