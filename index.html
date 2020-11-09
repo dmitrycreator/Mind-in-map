@@ -397,39 +397,58 @@
         console.log($(this).val());
     });
 
-    $('#Tab1').dblclick(function(){
+    $(document).on('dblclick', '#Tab1', function(){
         $('#Tab1').replaceWith('<input class="homeTab nav-item nav-link bg-white active" id="Tab1" data-toggle="tab" href="#nav-tab1" role="tab" aria-controls="nav-tab1" aria-selected="true" style="margin-right: .25rem;">')
         $('#Tab1').keydown(function(e) {
-            if(e.keyCode === 13) {
-                //console.log($(this).val());
-                var text = $(this).val();
+            if(e.keyCode == 13) {
+                var newText = $(this).val();
+                var currentText;
+                if (newText != " ") {
+                    currentText = newText;
+                }
+                else{
+                    currentText = sourceText;
+                }
                 $('#Tab1').replaceWith('<a class="homeTab nav-item nav-link bg-white active" id="Tab1" data-toggle="tab" href="#nav-tab1" role="tab" aria-controls="nav-tab1" aria-selected="true" style="margin-right: .25rem;"></a>')
-                $('#Tab1').text(text);
+                $('#Tab1').text(currentText);
             }
+        });
+        $('#Tab1').focusout(function(){
+            var text = $(this).val();
+            $('#Tab1').replaceWith('<a class="homeTab nav-item nav-link bg-white active" id="Tab1" data-toggle="tab" href="#nav-tab1" role="tab" aria-controls="nav-tab1" aria-selected="true" style="margin-right: .25rem;"></a>')
+            $('#Tab1').text(text);
         });
     });
 
-    $('#Tab2').dblclick(function(){
+    $(document).on('dblclick', '#Tab2', function(){
         $('#Tab2').replaceWith('<input class="homeTab nav-item nav-link bg-white active" id="Tab2" data-toggle="tab" href="#nav-tab2" role="tab" aria-controls="nav-tab2" aria-selected="false" style="margin-right: .25rem;">')
         $('#Tab2').keydown(function(e) {
-            if(e.keyCode === 13) {
-                //console.log($(this).val());
+            if(e.keyCode == 13) {
                 var text = $(this).val();
                 $('#Tab2').replaceWith('<a class="homeTab nav-item nav-link bg-white active" id="Tab2" data-toggle="tab" href="#nav-tab2" role="tab" aria-controls="nav-tab2" aria-selected="false" style="margin-right: .25rem;"></a>')
                 $('#Tab2').text(text);
             }
         });
+        $('#Tab2').focusout(function(){
+            var text = $(this).val();
+            $('#Tab2').replaceWith('<a class="homeTab nav-item nav-link bg-white active" id="Tab2" data-toggle="tab" href="#nav-tab2" role="tab" aria-controls="nav-tab2" aria-selected="false" style="margin-right: .25rem;"></a>')
+            $('#Tab2').text(text);
+        });
     });
 
-    $('#Tab3').dblclick(function(){
+    $(document).on('dblclick', '#Tab3', function(){
         $('#Tab3').replaceWith('<input class="homeTab nav-item nav-link bg-white active" id="Tab3" data-toggle="tab" href="#nav-tab3" role="tab" aria-controls="nav-tab3" aria-selected="false">')
         $('#Tab3').keydown(function(e) {
-            if(e.keyCode === 13) {
-                //console.log($(this).val());
+            if(e.keyCode == 13) {
                 var text = $(this).val();
                 $('#Tab3').replaceWith('<a class="homeTab nav-item nav-link bg-white active" id="Tab3" data-toggle="tab" href="#nav-tab3" role="tab" aria-controls="nav-tab3" aria-selected="false"></a>')
                 $('#Tab3').text(text);
             }
+        });
+        $('#Tab3').focusout(function(){
+            var text = $('#Tab3').val();
+            $('#Tab3').replaceWith('<a class="homeTab nav-item nav-link bg-white active" id="Tab3" data-toggle="tab" href="#nav-tab3" role="tab" aria-controls="nav-tab3" aria-selected="false"></a>')
+            $('#Tab3').text(text);
         });
     });
 
