@@ -63,3 +63,11 @@ a.homeTab {
     border: 1px solid #dee2e6!important;
     border-radius: .2rem;
 }
+
+.menu1Info{
+    height: 145px;
+}
+
+.menu1Share {
+    height: 180px;
+}

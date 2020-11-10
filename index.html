@@ -34,17 +34,45 @@
             <div class="btn-group" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-arrow-no-bordure.svg" alt=""></button>
                 <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-printno-bordure.svg" alt=""></button>
-                <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-shareno-bordure.svg"></button>
+                <button type="button" id="shareBtn" class="btn btn-light border btn-sm"><img src="img/Menu1-shareno-bordure.svg"></button>
                 <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-saveno-bordure.svg" alt="" id="exportToFile"></button>
                 <button type="button" class="btn btn-light border btn-sm"><img src="img/Menu1-loadno-bordure.svg" alt="" id="importFromFile"></button>
                 <button type="button" id="infoBtn" class="btn btn-light border btn-sm"><img src="img/Menu1-infono-bordure.svg" alt=""></button>
             </div>
         </div>
-        <div id="menu1Info" style="margin: 30px; display: none;">
+        <div id="menu1Share" style="margin-left: 20px; display: none;">
+            <p>Share project</p>
+            <div class="row mb-3">
+                <button type="button" class="btn btn-light border btm-sm ml-3 mr-1 p-1">
+                    <svg width="35" height="35" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.5 30.5V19.5M19.5 9.5H18.5C16.2909 9.5 14.5 11.2909 14.5 13.5V19.5M14.5 19.5H11.5M14.5 19.5H17.5M19.5 19.5V28.5M19.5 30.5V28.5M19.5 28.5L20.5 29.5C21.8807 30.8807 24.1193 30.8807 25.5 29.5V29.5C26.8807 28.1193 26.8807 25.8807 25.5 24.5V24.5C24.1193 23.1193 21.8807 23.1193 20.5 24.5L20 25" stroke="black" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button type="button" class="btn btn-light border btm-sm ml-2 mr-1 p-1">
+                    <svg width="35" height="35" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.5 30.5V9.5M14.5 9.5H9.5M14.5 9.5H19.5M19.5 19.5L20.7911 29.8289C20.9301 30.9406 22.5121 31.0179 22.7588 29.9252L24.0246 24.3198C24.2593 23.2802 25.7407 23.2802 25.9754 24.3198L27.2412 29.9252C27.4879 31.0179 29.0699 30.9406 29.2089 29.8289L30.5 19.5" stroke="black" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button type="button" class="btn btn-light border btm-sm ml-2 mr-1 p-1">
+                    <svg width="35" height="35" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.253 28.8596C18.4483 28.6643 18.4483 28.3477 18.253 28.1525C18.0578 27.9572 17.7412 27.9572 17.5459 28.1525L18.253 28.8596ZM22.4957 18.253C22.691 18.4482 23.0075 18.4482 23.2028 18.253C23.3981 18.0577 23.3981 17.7411 23.2028 17.5459L22.4957 18.253ZM11.182 24.6169L17.5459 18.253L16.8388 17.5459L10.4749 23.9098L11.182 24.6169ZM16.8368 30.2758L18.253 28.8596L17.5459 28.1525L16.1297 29.5687L16.8368 30.2758ZM17.5459 18.253C18.9128 16.8861 21.1289 16.8861 22.4957 18.253L23.2028 17.5459C21.4454 15.7885 18.5962 15.7885 16.8388 17.5459L17.5459 18.253ZM11.182 29.5667C9.81515 28.1998 9.81515 25.9838 11.182 24.6169L10.4749 23.9098C8.71751 25.6672 8.71751 28.5164 10.4749 30.2738L11.182 29.5667ZM10.4749 30.2738C12.2319 32.0308 15.0792 32.0335 16.8368 30.2758L16.1297 29.5687C14.7632 30.9352 12.5491 30.9338 11.182 29.5667L10.4749 30.2738Z" fill="black"/>
+                    <path d="M22.4957 11.889C22.3005 12.0842 22.3005 12.4008 22.4957 12.5961C22.691 12.7913 23.0076 12.7913 23.2028 12.5961L22.4957 11.889ZM18.2531 22.4956C18.0578 22.3003 17.7412 22.3003 17.546 22.4956C17.3507 22.6908 17.3507 23.0074 17.546 23.2027L18.2531 22.4956ZM29.5668 16.1316L23.2028 22.4956L23.9099 23.2027L30.2739 16.8387L29.5668 16.1316ZM23.9119 10.4728L22.4957 11.889L23.2028 12.5961L24.619 11.1799L23.9119 10.4728ZM23.2028 22.4956C21.836 23.8624 19.6199 23.8624 18.2531 22.4956L17.546 23.2027C19.3033 24.96 22.1526 24.96 23.9099 23.2027L23.2028 22.4956ZM29.5668 11.1819C30.9336 12.5487 30.9336 14.7648 29.5668 16.1316L30.2739 16.8387C32.0313 15.0814 32.0313 12.2321 30.2739 10.4748L29.5668 11.1819ZM30.2739 10.4748C28.5169 8.71772 25.6696 8.71508 23.9119 10.4728L24.619 11.1799C25.9856 9.81336 28.1996 9.8147 29.5668 11.1819L30.2739 10.4748Z" fill="black"/>
+                    </svg>
+                </button>
+                <button type="button" class="btn btn-light border btm-sm ml-2 mr-1 p-1">
+                    <svg width="35" height="35" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 9.5V19.5V26.5C16 28.7091 17.7909 30.5 20 30.5H21M24 22.5V28.5V30.5M24 19.5V20.5" stroke="black" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <p>Give rights</p>
+            <input type="email" class="form-control form-control-md w-75" placeholder="test@test.com"/>
+        </div>
+        <div id="menu1Info" style="margin-left: 30px; display: none;">
             <p>Info about project</p>
             <p>Last changes: 15:22, 03.11.2020</p>
             <p>Date of creation: 11.11.2020</p>
-            <p>Author: test@test.com</p>
+            <p class="mb-0">Author: test@test.com</p>
         </div>
         <div class="menu2" style="margin-right: 30px;">
             <h4 class="lead text-dark">Tools</h4>
@@ -455,11 +483,37 @@
     $('#infoBtn').click(function(){
         if ($('#menu1Info').css('display') == 'none') 
         {
-            $('#menu1Info').animate({height: 'show'}, 500); 
+            if ($('#menu1Share').css('display') == 'none') {
+                $('#menu1Info').animate({height: 'show'}, 500); 
+            }
+            else
+            {
+                $('#menu1Share').animate({height: 'hide'}, 500);
+                $('#menu1Info').animate({height: 'show'}, 500); 
+            }
         }
         else 
         {     
             $('#menu1Info').animate({height: 'hide'}, 500); 
+        }
+    });
+
+    $('#shareBtn').click(function(){
+        if ($('#menu1Share').css('display') == 'none') 
+        {
+            if ($('#menu1Info').css('display') == 'none') {
+
+                $('#menu1Share').animate({height: 'show'}, 500); 
+            }
+            else
+            {
+                $('#menu1Info').animate({height: 'hide'}, 500);
+                $('#menu1Share').animate({height: 'show'}, 500); 
+            }
+        }
+        else 
+        {     
+            $('#menu1Share').animate({height: 'hide'}, 500); 
         }
     });
 
