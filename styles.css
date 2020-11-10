@@ -5,13 +5,17 @@ html{
 *, *:before, *:after{
     box-sizing: border-box;
 }
+.menu1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .menu1,
 .menu2,
 .menu3,
 .menu4 {
-    margin: 5%;
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 body{
@@ -65,7 +69,7 @@ a.homeTab {
 }
 
 .menu1Info{
-    height: 145px;
+    height: 144px;
 }
 
 .menu1Share {
