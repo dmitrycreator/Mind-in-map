@@ -75,3 +75,8 @@ a.homeTab {
 .menu1Share {
     height: 180px;
 }
+
+#jsmind_container{
+    width: 1536px;
+    height: 100vh;
+}
